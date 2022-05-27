@@ -199,6 +199,30 @@
       }
    }
 }
+@media (max-width: 780px) {
+   .header__people{
+      display: none;
+   }
+}
+@media (max-width: 480px) {
+   .header__contact {
+      margin-top: 20px;
+   }
+   .header__logo {
+      margin-top: 50px;
+   }
+   .header__menu {
+      flex-direction: column;
+   }
+}
+@media (max-width: 390px) {
+   .header__title_title {
+      font-size: 38px;
+   }
+   .header__title_subtitle {
+      font-size: 18px;
+   }
+}
 
 
 //====================================================================================================
