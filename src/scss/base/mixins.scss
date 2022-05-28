@@ -2,9 +2,10 @@ $fontFamily: 'MuseoModerno';
 @mixin museModerno-medium {
    font-family: $fontFamily;
    font-style: normal;
-   font-weight: 500;
+   font-weight: 300;
    font-size: 14px;
-   line-height: 22px;
+   line-height: 16px;
+   text-align: center;
 }
 
 @mixin  museModerno-medium-small {
@@ -21,7 +22,6 @@ $fontFamily: 'MuseoModerno';
    font-weight: 500;
    font-size: 14px;
    line-height: 14px;
-   text-decoration-line: underline;
    color: #C70101;
    display: flex;
    justify-content: center;
@@ -65,6 +65,7 @@ $fontFamily: 'MuseoModerno';
    font-size: 16px;
    line-height: 25px;
    color: #0D0D0D;
+   text-align: center;
 }
 
 @mixin museoModerno-bold-puls-buy {
@@ -102,4 +103,5 @@ $fontFamily: 'MuseoModerno';
    font-size: 18px;
    line-height: 18px;
    text-transform: uppercase;
+   text-align: center;
 }
