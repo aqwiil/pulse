@@ -7,7 +7,7 @@
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="main">
-               <div class="achivment">
+               <section class="achivment">
                   <div class="container">
                      <div class="achivment__block">
                         <div class="achivment__title">НАШИ ПРЕИМУЩЕСТВА</div>
@@ -36,8 +36,8 @@
                         </div>
                      </div>
                   </div>
-               </div>
-               <div class="consultation">
+               </section>
+               <section class="consultation">
                   <div class="container">
                      <div class="consultation__block">
                         <div class="consultation__title">Получите бесплатную консультациюпо <br> подбору пульсометра </div>
@@ -50,7 +50,20 @@
                         </form>
                      </div>
                   </div>
-               </div>
+               </section>
+               <section class="carousel">
+                  <div class="container">
+                     <div class="carousel__inner">
+                        <div>
+                           <img src="@img/slider/slide1.png" alt="slide">
+                        </div>
+                        <div> 
+                           <img src="@img/slider/slide2.png" alt="slide"></div>
+                        <div> 
+                           <img src="@img/slider/slide3.png" alt="slide"></div>
+                     </div>
+                  </div>
+               </section>
             </div>
          </main>
 			@@include('html/_footer.htm',{})

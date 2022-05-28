@@ -150,3 +150,83 @@ main {
    max-width: 303px;
 }
 
+//  Карусель на дж
+.carousel {
+   padding-top: 81px;
+   padding-bottom: 82px;
+   &__inner {
+      img {
+         width: 100%;
+         height: 100%;
+      }
+      position: relative;
+      margin: 0 auto;
+      max-width: 750px;
+   }
+   .slick-prev {
+      top: 50%;
+      transform: translateY(-50%);
+      left: -66px;
+      position: absolute;
+      width: 31px;
+      height: 50px;
+   }
+   .slick-next {
+      top: 50%;
+      transform: translateY(-50%);
+      right: -66px;
+      position: absolute;
+      width: 31px;
+      height: 50px;
+   }
+   @media (max-width: 700px) {
+      .slick-prev {
+         transform: none;
+         top: 400px;
+         left: 125px; 
+      }
+      .slick-next {
+         transform: none;
+         top: 400px;
+         right: 125px; 
+      }
+   }
+   @media (max-width: 550px) {
+      .slick-prev,
+      .slick-next {
+         top: 370px;
+      }
+   }
+   @media (max-width: 450px) {
+      .slick-prev,
+      .slick-next {
+         top: 300px;
+      }
+   }
+   @media (max-width: 450px) {
+      .slick-prev,
+      .slick-next {
+         top: 275px;
+      }
+      .slick-next {
+         right: 100px;
+      }
+      .slick-prev {
+         left: 100px;
+      }
+   }
+   @media (max-width: 360px) {
+      .slick-prev,
+      .slick-next {
+         top: 245px;
+      }
+      .slick-next {
+         right: 50px;
+      }
+      .slick-prev {
+         left: 50px;
+      }
+   }
+}
+
+
