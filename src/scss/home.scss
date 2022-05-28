@@ -1,4 +1,8 @@
 //====================================================================================================
+main {
+   font-family: $fontFamily;
+}
+
 .achivment {
    background-color: #F6F6F6;
    &__block {
@@ -51,7 +55,7 @@
          
          margin-top: 35px;
          font-weight: 700;
-         font-size: 18px;
+         font-size: 24px;
          line-height: 29px;
          color: #0D0D0D;
       }
@@ -64,13 +68,85 @@
          max-width: 260px;
          margin-top: 20px;
          font-weight: 300;
-         font-size: 14px;
+         font-size: 18px;
          line-height: 18px;
          color: #0D0D0D;
          
       }
    }
 }
-
-
 //====================================================================================================
+
+// form block
+
+.consultation {
+   background-image: url("@img/background/bg2.png");
+   min-height: 680px;
+   padding-top: 100px;
+   padding-bottom: 110px;
+}
+.consultation {
+
+   &__block {
+   }
+
+   &__title {
+      font-family: 'MuseoModerno';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 54px;
+      text-align: left;
+      max-width: 900px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+   }
+
+   &__txt {
+      margin-top: 10px;
+      font-family: 'MuseoModerno';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      display: flex;
+      align-items: flex-end;
+      color: #FFFFFF;
+      
+   }
+}
+.feed-form {
+
+   input {
+      border-radius: 10px;
+      height: 54px;
+      padding: 0 20px;
+      margin-top: 15px;
+      &:first-child {
+         margin-top: 36px;
+      }
+   }
+   button {
+      width: 303px;
+      height: 58px;
+      background: #C70101;
+      font-family: $fontFamily;
+      margin-top: 20px;
+      border-radius: 10px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      
+   }
+   display: flex;
+   flex-direction: column;
+   max-width: 303px;
+}
+

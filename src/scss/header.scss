@@ -1,5 +1,6 @@
 //====================================================================================================
 .header {
+   font-family: $fontFamily;
    background-image: url("@img/background/bg.png");
    height: 650px;
    &__menu {
@@ -19,7 +20,8 @@
          font-size: 12px;
          line-height: 12px;
          display: flex;
-         align-items: flex-end;
+         justify-content: center;
+         align-items: center;
          text-align: center;
          color: #FFFFFF;
       }
@@ -28,14 +30,10 @@
          font-weight: 500;
          font-size: 18px;
          line-height: 29px;
-         /* identical to box height */
-         
          display: flex;
          align-items: flex-end;
          text-align: center;
-         
          color: #FFFFFF;
-         
       }
    }
 
@@ -45,14 +43,10 @@
          font-weight: 700;
          font-size: 18px;
          line-height: 18px;
-         /* identical to box height, or 100% */
-         
          display: flex;
          align-items: flex-end;
          text-align: right;
-         
          color: #FFFFFF;
-         
       }
 
       &_btn {
@@ -92,13 +86,10 @@
             font-weight: 700;
             font-size: 42px;
             line-height: 42px;
-            /* identical to box height, or 100% */
-            
             display: flex;
             align-items: flex-end;
             text-align: right;
-            text-transform: uppercase;
-            
+            text-transform: uppercase; 
             color: #FFFFFF;
 			}
 
@@ -106,13 +97,10 @@
             font-weight: 500;
             font-size: 24px;
             line-height: 24px;
-            /* identical to box height, or 100% */
-            
             display: flex;
             align-items: flex-end;
             text-align: right;
             text-transform: uppercase;
-            
             color: #FFFFFF;
 			}
 		}
@@ -137,13 +125,11 @@
 
 			&_txt {
             margin-top: 20px;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 14px;
             display: flex;
             align-items: flex-end;
             text-align: center;
             color: #FFFFFF;
+            @include museModerno-medium-small;
             
 			}
 		}
