@@ -36,4 +36,20 @@ $(document).ready(function () {
 
    toggleSlide('.catalog-item__back');
    toggleSlide('.catalog-item__link');
+
+   // modal
+
+   $('[data-modal=consultation]').on('click', function () {
+      $('.overley, #consultation').fadeIn('fast');
+   });
+   $('.modal__close').on('click', function () {
+      $('.overley, #consultation, #thanks, #order').fadeOut('slow');
+   });
+
+   $('.catalog-item__btn').each(function (i) {
+      $(this).on('click', function () {
+         $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+         $('.overley, #order').fadeIn('fast');
+      })
+   });
 });
