@@ -127,6 +127,9 @@ main {
 }
 
 .feed-form {
+   .error {
+      border: 1px solidre red;
+   }
    &_mt25 {
       margin-top: 25px;
    }

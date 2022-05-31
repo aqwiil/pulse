@@ -52,4 +52,28 @@ $(document).ready(function () {
          $('.overley, #order').fadeIn('fast');
       })
    });
+   function valideForms(form) {
+      $(form).validate({
+         rules: {
+            name: "required",
+            phone: "required",
+            email: {
+               required: true,
+               email: true
+            }
+         },
+         messages: {
+            name: "Пожалуйста, введите свое имя",
+            phone: "Пожалуйста, введите свой номер",
+            email: {
+               required: "Введите ваш эмейл",
+               email: "Неправильно введен эмейл"
+            }
+         }
+      })
+   };
+   valideForms('#consultation-form');
+   valideForms('#consultation form');
+   valideForms('#order form');
 });
+
